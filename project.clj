@@ -1,8 +1,9 @@
 (defproject storm/storm-benchmark "0.0.1-SNAPSHOT"
-  :source-path "src/clj"
-  :java-source-path "src/jvm"
-  :javac-options {:debug "true" :fork "true"}
-  :dependencies []
-  :dev-dependencies [[storm "0.8.1-wip5"]
-                     [org.clojure/clojure "1.4.0"]]
-)
+  :source-paths ["src/clj"]
+  :java-source-paths ["src/jvm"]
+  :test-paths ["test/clj"]
+  :javac-options {:debug "true"}
+  :dependencies [[storm/storm-core "0.9.0-wip19"]
+                 [storm/storm-netty "0.9.0-wip19"]
+                 [org.clojure/clojure "1.4.0"]]
+  :jvm-opts ["-Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib"])
