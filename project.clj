@@ -2,6 +2,7 @@
   :source-paths ["src/clj"]
   :java-source-paths ["src/jvm"]
   :test-paths ["test/clj"]
+  :resource-paths ["./conf"]
   :javac-options {:debug "true"}
   :dependencies [[storm/storm-core "0.9.0-wip19"]
                  [storm/storm-netty "0.9.0-wip19"]
